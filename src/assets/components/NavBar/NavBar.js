@@ -7,7 +7,7 @@ var elemento = document.getElementById("botonHome");
 
 
 function NavBar() {
-    let [botonHome, setBotonHome] = useState('< Dev={jr} />')
+    let [botonHome, setBotonHome] = useState('< Dev={JR} Design={JR} />')
     const handleClick = (sectionId) => {
         const sectionElement = document.getElementById(sectionId);
         sectionElement.scrollIntoView({ behavior: 'smooth' });
@@ -16,12 +16,12 @@ function NavBar() {
         window.addEventListener("scroll", function () {
 
             var posicion = window.pageYOffset;
-            if (posicion >= 900) {
+            if (posicion >= 800) {
                 // Cambiar el contenido del elemento
-                setBotonHome('< Lautaro David Alvarez nivel={jr} />');
+                setBotonHome('< Lautaro David Alvarez nivel={JR} />');
             } else {
                 // Restaurar el contenido original del elemento
-                setBotonHome( '< Dev={jr} />');
+                setBotonHome( '< Dev={JR} Design={JR} />');
             }
         })
     },[])

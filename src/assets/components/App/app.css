@@ -6,7 +6,7 @@
     --color-2:#E4C988;
     --color-3: #C27664;
     --color-4:#B05A7A;
-    --color-5: #393E46;
+    --color-5: #1f2d54;
     --color-6: #EB1D36;
     --color-7: #6fb1a6;
     --color-btn: #FFBF00;
@@ -28,20 +28,29 @@ h1, h2, h3, h4, input{
     font-weight: bold;
     font-style: oblique;
 }
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem
+}
 a{
     text-decoration: none;
     color: var(--color-5);
 }
 
 .contenedor-app{
-    height: 500vh;
+    height: auto;
     width: 100vw;
     overflow: hidden;
 }
 
 .contenedor-de-componentes{
     width: 100%;
-    height: 500vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +59,5 @@ a{
 .contenedor-componente{
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }

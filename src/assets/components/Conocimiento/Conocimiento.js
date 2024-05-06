@@ -1,6 +1,5 @@
 import './conocimiento.css'
 import imgs from '../../exports/exportImages'
-import fondoCert from '../../exports/exportImageConocimiento'
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 
@@ -31,7 +30,7 @@ function Conocimiento() {
                 onClick={() => { setActiveIndex(i); setView(!viewCertificado)}} 
                 className={`boton-certificado ${activeIndex === i ? '' : 'unactiveBtn'}`} 
             >
-                <h2>{certf.title}</h2>
+                <h3>{certf.name}</h3>
                 <h4>{certf.reference}</h4>
             </li>
         );
@@ -40,7 +39,6 @@ function Conocimiento() {
     function cardCertificacion(){
         let imgCert;
         let certificadoSelected;
-        let listadoHabilidades = []
         
         certificados.forEach( (x,i)=>{
             if(activeIndex === i){
@@ -64,7 +62,7 @@ function Conocimiento() {
                 )
             })
         
-        
+             
 
 
 
