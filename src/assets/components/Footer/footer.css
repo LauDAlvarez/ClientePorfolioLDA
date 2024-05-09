@@ -1,0 +1,20 @@
+.contactos-contenedor-footer{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-6);
+    border-radius: 5rem;
+    filter: drop-shadow(2px 2px 0 var(--color-5));
+}
+a.item-footer {
+    padding: 1rem;
+    color: var(--color-5) !important;
+    transition:ease-in .2s;
+}
+a.item-footer:hover {
+    scale: 1.2;
+}
+a.item-footer:active {
+    scale: 1.1;
+}

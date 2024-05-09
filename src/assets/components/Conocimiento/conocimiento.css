@@ -1,7 +1,12 @@
-.contenedor-conocimiento{
+.contenedor-titulo-conocimiento{
     margin: 10rem auto;
     width: 85%;
     height: 75%;
+}
+
+.contenedor-conocimiento{
+    width: 100%;
+    height: 100%;
     min-width: 36rem;
     border-radius: .75rem;
     background: url('https://c.wallhere.com/photos/95/18/The_Legend_of_Zelda_retro_games_video_games-1356901.jpg!d') no-repeat ;
@@ -88,14 +93,14 @@ li.boton-certificado{
     height: 100%;
     margin: 2rem;
 }   
-.info-certificado div p h1,.info-certificado div p h2{
+.info-certificado div span h1,.info-certificado div span h3{
     color: var(--color-btn);
     background-color: var(--color-6);
     padding: 1rem;
     border: 1px solid var(--color-2);
     border-radius: 0 0 .75rem 0;
 }
-.info-certificado p label{
+.info-certificado span label{
 
     color: var(--color-2);
     padding: 2px;
@@ -164,4 +169,7 @@ li.boton-certificado{
     position: relative;
     right: 20PX;
     top: 10px;
+}
+.comentario-certf{
+    color: var(--color-btn);
 }
