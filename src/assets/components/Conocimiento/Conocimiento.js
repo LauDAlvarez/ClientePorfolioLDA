@@ -52,45 +52,38 @@ function Conocimiento() {
             }
         })
 
-        // if(certificadoSelected){
-        //     let listHab = certificadoSelected.skills.toString().split(',');
-        //     let seccionHabilidades = listHab.map( (x,i)=>{
-        //         return (
-        //             <li key={i} className='item-habilidad'>{x.name}</li>
-        //         )
-        //     })
-        console.log(typeof imgCert)
         if (viewCertificado) {
             return (
                 <div className="card-certificado">
-                    <img src={imgCert} alt="Imagen de certificado" />
+                    <img src={imgCert} 
+                        alt={`Imagen de certificado ${certificadoSelected.name}`}
+                    />
                     <div className='info-certificado'>
                         <div className='contenedor-info-certificado'>
                             <span>
                                 <label>Titulo de Certificación </label>
-                                <h1>{certificadoSelected.name}</h1>
+                                <h2>{certificadoSelected.name}</h2>
                             </span>
                             <span>
                                 <label>Sitio de Certificación </label>
                                 <h3>{certificadoSelected.reference}</h3>
                             </span>
                             <span>
-                                <label>Duración </label>
+                                <h4>Duración </h4>
                                 <h3>{certificadoSelected.duration}</h3>
                             </span>
                         </div>
                         <div className='contenedor-habilidades'>
                             <h1>Comentario</h1>
-                            <ul className='contenedor-habilidades scroll-habilidades'>
-                                <h3 className='comentario-certf'>{certificadoSelected.comment}</h3>
-                            </ul>
+                            <div className='contenedor-habilidades scroll-habilidades'>
+                                <h4 className='comentario-certf'>{certificadoSelected.comment}</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             )
         }
     }
-    // }
 
     return (
         <div className='contenedor-titulo-conocimiento'>

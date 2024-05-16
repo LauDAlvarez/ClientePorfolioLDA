@@ -1,13 +1,13 @@
-:root{
-    --num-columns-p:2; 
-    --num-rows-p: 4; 
-    --num-columns-s:4; 
-    --num-rows-s: 4; 
-    --gap: 4rem;
+:root {
+    --num-columns-p: 2;
+    --num-rows-p: 4;
+    --num-columns-s: 4;
+    --num-rows-s: 4;
+    --gap: 5rem;
 }
+
 .body-presentacion {
-    margin: 10rem auto;
-    height: 85%;
+    height: 100%;
     width: 85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,21 +29,21 @@
     height: 100%;
     filter: drop-shadow(1px 1px 0 var(--color-btn));
 }
-.contenedor-presentacion h1{
+
+.contenedor-presentacion h1 {
     font-size: 5Rem;
     margin-top: 5rem;
 }
 
-
-
-.proyectos-presentacion { 
+.proyectos-presentacion {
     padding: 1rem;
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 85%;
     height: 90%;
     background-color: transparent;
 }
-.proyectos-presentacion ul{
+
+.proyectos-presentacion ul {
     padding: 4rem;
     width: 100%;
     height: 100%;
@@ -52,11 +52,12 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(var(--num-columns-p), 1fr); 
+    grid-template-columns: repeat(var(--num-columns-p), 1fr);
     grid-template-rows: repeat(var(--num-rows-p), 1fr);
-    gap: var(--gap); 
+    gap: var(--gap);
 }
-.proyectos-presentacion ul .proyectos-items{
+
+.proyectos-presentacion ul .proyectos-items {
     width: 90%;
     height: 90%;
     padding: 1rem;
@@ -69,22 +70,23 @@
     border: 2px solid var(--color-5);
     border-radius: .75rem;
     box-shadow: .3rem .3rem 0 var(--color-3);
-    filter: drop-shadow(-.5rem -.5rem 0 var(--color-5)) ;
+    filter: drop-shadow(-.5rem -.5rem 0 var(--color-5));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.proyectos-items .proyectos-items-contenido{
+
+.proyectos-items .proyectos-items-contenido {
     width: 85%;
     height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: center;
 }
 
-.skills-presentacion ul{
+.skills-presentacion ul {
     width: 90%;
     height: 90%;
     padding: 4rem;
@@ -93,11 +95,12 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(var(--num-columns-s) , 1fr); 
+    grid-template-columns: repeat(var(--num-columns-s), 1fr);
     grid-template-rows: repeat(var(--num-rows-s), 1fr);
-    gap: var(--gap); 
+    gap: var(--gap);
 }
-.skills-presentacion ul .skills-items{
+
+.skills-presentacion ul .skills-items {
     width: 100%;
     height: 90%;
     padding: 1rem;
@@ -109,40 +112,45 @@
     border: 2px solid var(--color-5);
     border-radius: .75rem;
     box-shadow: .3rem .3rem 0 var(--color-3);
-    filter: drop-shadow(-.5rem -.5rem 0 var(--color-5)) ;
+    filter: drop-shadow(-.5rem -.5rem 0 var(--color-5));
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.noHovered,.related-skill{
+.noHovered,
+.related-skill {
     opacity: .7;
 }
-.hovered{
+
+.hovered {
     transition: ease .5s;
 }
-.skillCoincidencia{
+
+.skillCoincidencia {
     position: relative;
     box-shadow: .4rem .4rem 0 var(--color-3);
-    filter: drop-shadow(-.6rem -.6rem 0 var(--color-5)) ;
+    filter: drop-shadow(-.6rem -.6rem 0 var(--color-5));
     scale: 1.05;
     transition: .5s;
 }
-.hovered:hover{
+
+.hovered:hover {
     position: relative;
     box-shadow: .4rem .4rem 0 var(--color-3);
-    filter: drop-shadow(-.6rem -.6rem 0 var(--color-5)) ;
+    filter: drop-shadow(-.6rem -.6rem 0 var(--color-5));
     scale: 1.05;
 }
-.hovered:active{
+
+.hovered:active {
     position: relative;
     filter: drop-shadow(-.2rem -.2rem 0 var(--color-5));
     box-shadow: .1rem .1rem 0 var(--color-3);
     top: -.2rem;
 }
 
-.animacion-presentacion{
-    margin: 0;
+.animacion-presentacion {
+    margin: 0 5rem 0;
     justify-self: end;
 }
 
@@ -220,7 +228,7 @@
 
 .carta-presentacion {
     display: none;
-    
+
 }
 
 .activePresentacion {
@@ -229,7 +237,7 @@
     top: 25%;
     left: 15%;
     width: 60vw;
-    height: 35vh;
+    height: 45vh;
     border: 2PX solid var(--color-5);
     border-radius: .75rem;
     filter: drop-shadow(-.3rem -.3rem 0px var(--color-5));
@@ -249,7 +257,8 @@
     text-align: center;
     margin: 1rem;
 }
-.contenedor-titulo-presentacion h3{
+
+.contenedor-titulo-presentacion .presentacion-contenido-carta{
     text-align: start;
 }
 
@@ -290,13 +299,14 @@
 }
 
 .btn-descarga-cv {
-    position: relative; 
+    position: relative;
     FONT-SIZE: 1.5rem;
     font-weight: bold;
     width: 10vw;
-    height: 4rem;
+    min-width: 12rem;
+    height: 5rem;
     background-color: var(--color-6);
-    top: 7.5vh;
+    top: 15.5vh;
     left: 49vw;
     filter: drop-shadow(0.3rem 0.3rem 0 var(--color-3));
     border: 2px solid var(--color-5);
@@ -308,12 +318,61 @@
 .btn-descarga-cv:hover {
     filter: drop-shadow(0.4rem 0.4rem 0 var(--color-3));
     box-shadow: -0.5rem -0.5rem var(--color-5);
-    top: 7.8vh;
+    top: 15.8vh;
 }
 
 .btn-descarga-cv:active {
-    top: 7.8vh;
+    top: 15.8vh;
     filter: drop-shadow(0.1rem 0.1rem 0 var(--color-3));
     border: 2px solid var(--color-5);
     box-shadow: -0.2rem -0.2rem var(--color-5);
+}
+
+
+@media (max-width: 1475px) {
+    .contenedor-presentacion {
+        width:90%;
+    }
+    .body-presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 58%;
+    }
+
+    .proyectos-presentacion ul {
+        justify-items: none;
+        align-items: none;
+    }
+
+    .grid-item {
+        height: 80vh;
+    }
+
+    .animacion-presentacion {
+        margin: 0 5rem 0;
+        position: absolute;
+        top: 12%;
+    }
+
+    .activePresentacion {
+        display: block;
+        position: absolute;
+        top: 17%;
+        left: 0%;
+        width: 85vw;
+        height: 45vh;
+        border: 2PX solid var(--color-5);
+        border-radius: .75rem;
+        filter: drop-shadow(-.3rem -.3rem 0px var(--color-5));
+        background-color: var(--color-btn);
+    }
+
+    .skills-presentacion ul {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: var(--gap);
+    }
 }

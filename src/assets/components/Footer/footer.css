@@ -1,5 +1,6 @@
 .contactos-contenedor-footer{
     width: 30%;
+    min-width: 30rem;
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -13,12 +13,12 @@ function App() {
     <BrowserRouter>
       <div className="contenedor-app">
         <NavBar/>
-        <div className='contenedor-de-componentes'>
-          <div className='contenedor-componente' id='idpresentacion'>
-            <Presentacion/>
+        <div className='contenedor-de-componentes '>
+          <div className='contenedor-componente con-pre' 
+            id='idpresentacion'><Presentacion/>
           </div>
-          <div className='contenedor-componente'  id='idconocimiento'>
-            <Conocimiento/>
+          <div className='contenedor-componente'  
+            id='idconocimiento'><Conocimiento/>
           </div>
         </div>
         <div id='idcontacto' >

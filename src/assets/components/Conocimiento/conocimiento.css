@@ -6,7 +6,7 @@
 
 .contenedor-conocimiento{
     width: 100%;
-    height: 100%;
+    height: 75vh;
     min-width: 36rem;
     border-radius: .75rem;
     background: url('https://c.wallhere.com/photos/95/18/The_Legend_of_Zelda_retro_games_video_games-1356901.jpg!d') no-repeat ;
@@ -16,10 +16,12 @@
 
 .contenedor-preview-certificado{
     width: 100%;
-    height: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .contenedor-preview-certificado ul{
@@ -39,6 +41,7 @@ li.boton-certificado{
     padding: 2rem;
     width: 28rem;
     height: 30%;
+    min-height: 120PX;
     border: 2px solid var(--color-5);
     cursor: pointer;
     margin: 1rem;
@@ -86,6 +89,7 @@ li.boton-certificado{
     width: 70%;
     height: 100%;
     border-radius: 0 .75rem .75rem  0;
+    background-image: fill 1 linear-gradient(var(--color-5), #000);
 }
 
 .card-certificado .info-certificado{
@@ -93,16 +97,15 @@ li.boton-certificado{
     height: 100%;
     margin: 2rem;
 }   
-.info-certificado div span h1,.info-certificado div span h3{
+.info-certificado div span h2,.info-certificado div span h3{
     color: var(--color-btn);
-    background-color: var(--color-6);
     padding: 1rem;
     border: 1px solid var(--color-2);
     border-radius: 0 0 .75rem 0;
+    text-align: right;
 }
 .info-certificado span label{
-
-    color: var(--color-2);
+    color: var(--color-btn);
     padding: 2px;
     background-color: var(--color-5);
     position: relative;
@@ -111,7 +114,7 @@ li.boton-certificado{
     border-radius: 0 0 .75rem 0;
 }
 .info-certificado div h1{
-    color: var(--color-2);
+    color: var(--color-btn);
 }
 
 
@@ -172,4 +175,32 @@ li.boton-certificado{
 }
 .comentario-certf{
     color: var(--color-btn);
+}
+h4.comentario-certf {
+    font-size: 2.4 rem;
+}
+
+@media (max-width: 952px) {
+    .contenedor-conocimiento{
+        min-width: 28rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-titulo-conocimiento {
+        margin: 10rem auto;
+        width: 85%;
+        height: 145vh;
+    }
+    .contenedor-preview-certificado ul{
+        height: auto;
+        width: 90%;
+        justify-content: center;
+    }
+    
+    li.boton-certificado {
+        height: 15%;
+    }
 }
